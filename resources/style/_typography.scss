@@ -1,0 +1,54 @@
+//////////////////////////////////////////////////////////////////////////////////
+//  Siimple - Minimal CSS framework for flat and clean designs.
+//  http://siimple.github.io
+//  Under the MIT License
+//////////////////////////////////////////////////////////////////////////////////
+
+//Links
+
+a
+{
+   // Overall link style
+   color: $grey1; font-weight: 300; text-decoration: none;
+
+   &:hover { color: lighten($grey1,24%); cursor:pointer; transition:all 0.1s;}
+}
+
+//Paragraph
+p { line-height: 1.75rem; margin: { bottom: 1.25rem; top: 0px; } display: block;
+   a{ text-decoration: underline }
+}
+
+//Lists
+ul, ol { line-height: 1.75rem; margin: { bottom: 1rem; top: 0px; } li { line-height: 1.75rem; } }
+
+//Small text
+small { color: $grey2; font-size: 0.88rem; }
+
+//Headings list
+$headings: (1,2,2.88),(2,1.75,2.6),(3,1.5,2.4),(4,1.25,2.13),(5,1.1,2),(6,1,1.88);
+//$headings: (1,2.25,3.13),(2,2,2.88),(3,1.75,2.6),(4,1.5,2.4),(5,1.25,2.13),(6,1,1.88);
+
+//Common headings
+h1, h2, h3, h4, h5, h6
+{
+	//Font
+	font-weight: 300;
+
+	//Color
+	color: $grey1;
+
+	//Display
+	display: block;
+
+	//Margins
+   //was 1.25 0
+	margin: { bottom: 0.8rem; top: 0.4rem; }
+}
+
+//Build all the headings
+@each $i,$fs,$lh in $headings
+{
+	//Add the heading style
+	h#{$i} { font-size: #{$fs}rem; line-height: #{$lh}rem; }
+}

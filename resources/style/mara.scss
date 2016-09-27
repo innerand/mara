@@ -1,0 +1,51 @@
+//  CSS for the Mara Theme
+//
+//  Based on the siimple css framework by Josemi Juanes
+//  http://siimple.github.io
+
+//Import mixins
+//@import "mixins";
+
+//Import colors
+@import "colors";
+
+//Import the base
+@import "base";
+
+//Import typography: p, headings, links...
+@import "typography";
+
+//Import the alerts module
+//@import "alert";
+
+//Import buttons
+//@import "btn";
+
+//Import code boxes
+@import "code";
+
+//Import form module
+//@import "form";
+
+//Import the grid system for siimple
+@import "grid";
+
+//Import the table module
+@import "table";
+
+//Import the pagination module
+@import "pagination";
+
+//Import lists module
+@import "lists";
+
+@import "heading";
+
+@import "footer";
+
+//Import content module
+@import "content";
+
+//Import custom module
+@import "custom";
+

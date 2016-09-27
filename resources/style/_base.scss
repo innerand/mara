@@ -1,0 +1,83 @@
+//
+// Basic settings
+//
+
+// Default font block
+@mixin defaultFont {
+   font: {
+      family: 'Open Sans', sans-serif;
+      size: 1rem;
+      weight: 300;
+  }
+}
+
+@mixin defaultmsFont {
+   font: {
+      family: 'DejaVu Sans Mono', monospace;
+      size: 1rem; weight: 300;
+   }
+}
+
+// Body
+body {
+   color: $textcolor-default;
+   margin: 0px;
+   padding: 0px;
+   @include defaultFont;
+   background-color: $bgcolor-empty;
+}
+
+
+// TODO: Probably wrong usage of main tag
+main {
+}
+
+// Keep the footer near bottom
+#main {
+   min-height: 75vh;
+}
+
+// Blockquote
+blockquote {
+   border: { left: 4px solid $border-quote; }
+   padding: {
+      left: 20px;
+      right: 5px;
+      bottom: 5px;
+      top: 5px;
+   }
+}
+
+
+// html svg inline icons
+.icon{
+   svg{
+      fill: $textcolor-default;
+      margin: auto;
+      height: 1.5rem;
+      width: auto;
+      padding: 0.1rem;
+   }
+}
+
+.iconlink {
+   color: $textcolor-default;
+   //border:1px solid red;
+   display: inline-block;
+   position: relative;
+   svg {
+      position: absolute;
+      top: calc(50% - 0.6rem);
+      left:0.1rem;
+      fill:  $textcolor-default;
+      height: 1.2rem;
+   }
+   span {
+      padding-left: 1.4rem;
+      padding-right: 0.1rem;
+   }
+
+   &:hover { svg { fill: $textcolor-light; }
+             color: $textcolor-light; }
+}
+

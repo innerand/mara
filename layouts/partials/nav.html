@@ -1,0 +1,5 @@
+      {{ $currentNode := . }}
+      {{- range .Site.Menus.main }}
+      <a class="nav-link{{ if $currentNode.IsMenuCurrent "main" . }} nav-link-active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+

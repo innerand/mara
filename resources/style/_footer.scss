@@ -1,0 +1,27 @@
+//
+// footer
+//
+
+#footer {
+   margin-top: 5rem;
+   padding-top: 0;
+   border-top: 1px solid lightgrey;
+   text-align: center;
+   clear: both;
+   font-size: 0.8rem;
+   opacity:  .6;
+
+   a { text-decoration: none; }
+   p { margin-bottom: 0; }
+
+   .footer-links{
+       a {
+            display: block;
+            padding: 0px 2px;
+            margin: 0 4px;
+         }
+   }
+
+   .footer-left { float:left; }
+   .footer-right { float: right; }
+}

@@ -1,0 +1,69 @@
+
+
+// Title color
+$title-accent-color: #de0000; //Accent color for the page title
+
+// Textcolor
+$textcolor-default: #323e4a; //Default text color
+$textcolor-light: lighten($textcolor-default, 20%);
+$textcolor-small: #6a7e95;   //Small text color
+$textcolor-code: $textcolor-default;
+
+// Background colors
+$bgcolor-empty: whitesmoke;
+$bgcolor-blocks: #f1f5fa;
+$bgcolor-code: lighten(#fff8e1, 2%);
+
+// Border colors
+$border-quote: $textcolor-light;
+
+// Button color
+$button-color: #cacaca;
+$button-border: darken($button-color, 20%);
+$button-border-hover: $textcolor-default;
+
+// alert colors currently not adjusted to mara theme
+//Default alert color
+$alert-default: #03A9F4;
+$alert-default-bg: #E1F5FE;
+$alert-default-border: #03A9F4;
+
+//Error alert color
+$alert-error: #D32F2F;
+$alert-error-bg: #FFEBEE;
+$alert-error-border: #F44336;
+
+//Warning alert color
+$alert-warning: #FF8F00;
+$alert-warning-bg: #FFF8E1;
+$alert-warning-border: #FFC107;
+
+//Done alert color
+$alert-done: #388E3C;
+$alert-done-bg: #E8F5E9;
+$alert-done-border: #4CAF50;
+
+// default colors
+$white: #ffffff;
+$black: #000000;
+
+// Compatibility with siimple theme
+// should be removed finaly
+
+//Grey colors
+//$grey1: #526475; //Used as default text color
+$grey1: $textcolor-default; //Used as default text color
+$grey2: $textcolor-small; //Used as small text color
+$grey3: $bgcolor-blocks; //Used for blocks background
+
+//Blue colors
+$blue1: #09a0f6;
+$blue2: #d1e1e8;
+
+//Button Colors
+$green1: #7CB342;
+$green2: darken($green1 ,10%);
+$red1: #F44336;
+$red2: darken($red1 ,10%);
+$orange1: #F57C00;
+$orange2: darken($orange1 ,10%);

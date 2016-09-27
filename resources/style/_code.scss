@@ -1,0 +1,35 @@
+//////////////////////////////////////////////////////////////////////////////////
+//  Siimple - Minimal CSS framework for flat and clean designs.
+//  http://siimple.github.io
+//  Under the MIT License
+//////////////////////////////////////////////////////////////////////////////////
+
+//Code
+code {
+   @include defaultmsFont;
+   border-radius: 0px;
+   background-color: $bgcolor-code;
+   color: $textcolor-code;
+   font-size: 0.9rem;
+   padding: {
+      left: 0.3rem;
+      right: 0.3rem;
+   }
+}
+
+//Code multiple lines
+pre {
+   @include defaultmsFont;
+   display:block;
+   width: calc(80ch + 0.6rem);
+   max-width: 95%;
+   margin: auto;
+   margin: { bottom: 1.25rem; }
+   padding: 0.875rem;
+   line-height: 1.5rem;
+   border-radius: 0px;
+   background-color: $bgcolor-code;
+   color: $textcolor-code;
+   overflow-x: auto;
+}
+

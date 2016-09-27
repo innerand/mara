@@ -1,0 +1,58 @@
+//////////////////////////////////////////////////////////////////////////////////
+//  Siimple - Minimal CSS framework for flat and clean designs.
+//  http://siimple.github.io
+//  Under the MIT License
+//////////////////////////////////////////////////////////////////////////////////
+
+$media-width-wide: 1130px;
+$media-width-thin:  970px;
+$site-padding: 1%;
+
+//Default grid
+.grid
+{
+  //Grid style
+  display: block; width: $media-width-wide; margin: { left: auto; right: auto; bottom:1rem;} min-height: 40px;
+  background-color: white;
+
+  //Grid media
+  @media (max-width: ($media-width-wide * 1.0638) ) { width: 100%; }
+
+  //Grid fluid
+  &-fluid { width: 100%; }
+}
+
+//Grid row
+.row
+{
+  //Row style
+  box-sizing: border-box; display: inline-block; width: 100%; padding: { left: $site-padding; right: $site-padding; }
+
+  //Row after
+  &:after { content: " "; clear: both; display: table; line-height: 0; }
+}
+
+//Grid columns list
+$cols: (1,'8.32%'),(2,'16.65%'),(3,'24,99%'),(4,'33.32%'),(5,'41.65%'),(6,'49.99%'),(7,'58.32%'),
+       (8,'66.65%'),(9,'74.99%'),(10,'83.32%'),(11,'91.65%'),(12,'100%');
+
+//Read all the list
+@each $i,$w in $cols
+{
+  //Add the column style
+	.col-#{$i}
+  {
+    //Default column style
+    width: unquote($w); box-sizing: border-box; display: inline-block; vertical-align: top; padding: 0.5rem;
+  }
+}
+
+//Media column style
+@media(max-width: $media-width-thin)
+{
+  @each $i,$w in $cols
+  {
+    //Add the column style
+    .col-#{$i} { width: 100%; }
+  }
+}

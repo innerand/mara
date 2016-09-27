@@ -1,0 +1,13 @@
+   <div class="flex-container List-Item">
+      <div class="List-Item-Side">
+       {{- if isset .Params "image" }}
+       <div class="List-Item-Image"><a href="{{ .Permalink }}"><img src="{{ .Permalink}}/{{ .Params.image }}" alt="Banner" /></a></div>
+       {{- end }}
+      </div>
+      <div class="List-Item-Content">
+         <p class="List-Item-Pre">{{ if isset .Params "categories" }}{{ index .Params.categories 0 }} {{ end }}</p>
+         <h2 class="List-Item-Title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div class="List-Item-Sub">{{ .PublishDate.Format .Site.Params.DateForm }}</div>
+      <p>{{ .Summary }}{{if .Truncated }} ... {{ end }}</p>
+      </div>
+   </div>

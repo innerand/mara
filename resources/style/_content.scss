@@ -1,0 +1,90 @@
+//
+// Single Content styles
+//
+
+// Center an inline div with Post-Titel and Post-Title-Pre
+// to align Post-title-pre left to Post-title
+.Post-Heading-Container{
+   margin-top:1.25rem;
+   margin-bottom: 1.2rem;
+   text-align: center;
+   font-size: 0.8rem;
+   line-height: 1rem;
+}
+
+.Post-Heading-Inline{
+   display: inline-block;
+}
+.Post-Title-Pre{
+   text-align: left;
+}
+
+.Post-Title{
+   font-size: 2.25rem;
+   line-height: normal;
+   font-weight: normal;
+   letter-spacing: 0.1rem;
+   text-align: left;
+   margin-top: 0rem;
+   margin-bottom: 0;
+ }
+
+.Post-Title-Sub {
+   line-height: 1rem;
+   text-align: left;
+   margin-top: 0;
+}
+
+.Post-Banner-Image {
+   margin: auto;
+   margin-top: 0.5rem;
+   margin-bottom: -0.5rem;
+
+   img {
+      max-width: 100%;
+      height: auto;
+   }
+}
+
+.contentfooter {
+   position: relative;
+   margin: auto;
+   margin-top: 2rem;
+   width: 100%;
+   //border-bottom: 1px solid $textcolor-light;
+   font-size: 1rem;
+
+   .line {
+      margin-top: 4rem;
+      position: relative;
+      border-bottom: 1px solid $textcolor-light;
+
+    a{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      padding: 0rem;
+      background-color: $textcolor-light;
+      svg { fill: $white }
+      &:hover { background-color: $textcolor-default }
+      }
+   }
+
+   .iconlink {
+   color: $textcolor-light;
+   svg {
+      fill:  $textcolor-light;
+   }
+   &:hover { svg { fill: $textcolor-default; }
+             color: $textcolor-default; }
+   }
+}
+
+#disqus_thread
+{
+   padding-top: 3rem;
+   margin: auto;
+}
+
+
+

@@ -1,0 +1,77 @@
+//
+// Heading
+//
+
+$title-color: $title-accent-color;
+$padding-hor: 0rem;
+$padding-ver: 0.4rem;
+
+// Conatiner for site heading
+.flex-container{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+// Site heading (Header and Nav)
+#heading {
+   border-bottom: 1px solid $textcolor-default;
+   border-top: 1px solid $textcolor-default;
+   padding-left:$padding-hor;
+   padding-right:$padding-hor;
+}
+
+#header {
+   flex: 1;
+   padding-top: $padding-ver;
+   padding-bottom: $padding-ver;
+   //border-bottom:2px solid black;
+   font-family: 'DejaVu Sans Mono', monospace;
+   font-size: 1.2rem;
+   // has to be equal with nav
+   line-height: 1.4rem;
+   font-weight: normal;
+
+   a {
+      color: $grey1;
+      text-decoration: none;
+
+      &:hover {
+         color: lighten($grey1, 25%);
+         }
+      }
+
+   #title {
+      display: inline;
+      color: $title-color;
+      a {
+          &:hover { color: lighten($title-color, 25%) !important;}
+        }
+   }
+}
+
+
+nav {
+      flex: 1;
+      white-space: nowrap;
+      text-align: right;
+      line-height: 1.4rem;
+      padding-bottom: $padding-ver;
+      padding-top: $padding-ver;
+      //border-bottom:2px solid black;
+      a {
+         text-decoration: none;
+         padding: 2px 2px;
+         margin: 0 4px;
+         &:hover{
+            //border-bottom: 1px solid $grey2;
+         }
+      }
+      .nav-link-active{
+         //border-bottom: 1px solid $grey2;
+         //font-weight: normal;
+         //text-decoration: underline;
+         color: #000;
+      }
+
+   }
+
