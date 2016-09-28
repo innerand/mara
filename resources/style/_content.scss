@@ -78,6 +78,19 @@
    &:hover { svg { fill: $textcolor-default; }
              color: $textcolor-default; }
    }
+   .facebook { &:hover { svg { fill: $fbblue; }
+                         color: $fbblue;
+                       }
+             }
+   .twitter { &:hover { svg { fill: $twitterblue; }
+                         color: $twitterblue;
+                       }
+             }
+   .google { &:hover { svg { fill: $googlered; }
+                         color: $googlered;
+                       }
+             }
+
 }
 
 #disqus_thread

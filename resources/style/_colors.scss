@@ -1,5 +1,3 @@
-
-
 // Title color
 $title-accent-color: #de0000; //Accent color for the page title
 
@@ -21,6 +19,11 @@ $border-quote: $textcolor-light;
 $button-color: #cacaca;
 $button-border: darken($button-color, 20%);
 $button-border-hover: $textcolor-default;
+
+// Brand colors
+$fbblue: #3b5998;
+$twitterblue: #00aced;
+$googlered: #d34836;
 
 // alert colors currently not adjusted to mara theme
 //Default alert color
