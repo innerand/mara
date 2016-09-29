@@ -1,11 +1,16 @@
    </main>
-   <div class="col-3"> ASIDE </div>
+   <div class="col-3">
+      <div id="aside"> {{ partial "aside" . }} </div>
+   </div>
   </div>
   <div class="row">
    <div class="col-12">
    <div id="footer" role="contentinfo">
       <div class="footer-links">
-      {{ partial "footer-links" . }}
+         {{ $currentNode := . }}
+         {{- range .Site.Menus.footer }}
+         <a {{ if $currentNode.IsMenuCurrent "footer" . }} class="nav-link-active" {{ end }} href="{{ .URL }}">{{ .Name }}</a>
+         {{ end }}
       </div>
       <p class="footer-left"></p>
       <p class="footer-right"><a href="https://gohugo.io" target="blank">powered by Hugo</a></p>

@@ -1,5 +1,0 @@
-      {{ $currentNode := . }}
-      {{- range .Site.Menus.footer }}
-      <a {{ if $currentNode.IsMenuCurrent "footer" . }} class="nav-link-active" {{ end }} href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-

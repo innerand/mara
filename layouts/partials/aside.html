@@ -1,0 +1,38 @@
+<div id="profiles">
+   {{ if (isset .Site.Params "github") }}<a class="icon" href="{{ .Site.Params.github }}" target="_blank" title="Find me at GitHub">{{ partial "genericons/svggithub" }}<span> </span></a> {{ end }}
+   {{ if (isset .Site.Params "twitter") }}<a class="icon" href="{{ .Site.Params.twitter }}" target="_blank" title="Find me at Twitter">{{ partial "genericons/svgtwitter" }}</a> {{ end }}
+   {{ if (isset .Site.Params "facebook") }}<a class="icon" href="{{ .Site.Params.facebook }}" target="_blank" title="Find me at Facebook">{{ partial "genericons/svgfacebook" }}</a> {{ end }}
+   {{ if (isset .Site.Params "googleplus") }}<a class="icon" href="{{ .Site.Params.googleplus }}" target="_blank" title="Find me at Google+">{{ partial "genericons/svggoogleplus" }}</a> {{ end }}
+</div>
+
+{{ if (isset .Site.Sections "article" ) }}
+<div class="latest">
+   <p>Recent Articles</p>
+   <ul>
+   {{ range first 3 (where .Site.Pages "Section" "article") }}
+      {{ .Render "latest" }}
+   {{ end }}
+   </ul>
+</div>
+{{ end }}
+{{ if (isset .Site.Sections "micro") }}
+<div class="latest">
+   <p>Recent Thoughts</p>
+   <ul>
+   {{ range first 3 (where .Site.Pages "Section" "micro") }}
+      {{ .Render "latest" }}
+   {{ end }}
+   </ul>
+</div>
+{{ end }}
+
+{{ if (isset .Site.Sections "post") }}
+<div class="latest">
+   <p>Recent Blog Posts</p>
+   <ul>
+   {{ range first 3 (where .Site.Pages "Section" "post") }}
+      {{ .Render "latest" }}
+   {{ end }}
+   </ul>
+</div>
+{{ end }}
