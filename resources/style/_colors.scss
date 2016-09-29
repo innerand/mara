@@ -1,3 +1,6 @@
+$white: #ffffff;
+$black: #000000;
+
 // Title color
 $title-accent-color: #de0000; //Accent color for the page title
 
@@ -8,9 +11,13 @@ $textcolor-small: #6a7e95;   //Small text color
 $textcolor-code: $textcolor-default;
 
 // Background colors
-$bgcolor-empty: whitesmoke;
+//$bgcolor-default: #fffaf0;
+$bgcolor-default: $white;
+$bgcolor-empty: darkgrey;//whitesmoke;
 $bgcolor-blocks: #f1f5fa;
 $bgcolor-code: lighten(#fff8e1, 2%);
+//$bgcolor-code: #ffebcd;
+$bgcolor-aside: #fffaf0;
 
 // Border colors
 $border-quote: $textcolor-light;
@@ -24,6 +31,7 @@ $button-border-hover: $textcolor-default;
 $fbblue: #3b5998;
 $twitterblue: #00aced;
 $googlered: #d34836;
+$githubblue: #4078c0;
 
 // alert colors currently not adjusted to mara theme
 //Default alert color
@@ -46,9 +54,6 @@ $alert-done: #388E3C;
 $alert-done-bg: #E8F5E9;
 $alert-done-border: #4CAF50;
 
-// default colors
-$white: #ffffff;
-$black: #000000;
 
 // Compatibility with siimple theme
 // should be removed finaly
