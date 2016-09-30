@@ -14,8 +14,9 @@ $padding-ver: 0.4rem;
 
 // Site heading (Header and Nav)
 #heading {
-   border-bottom: 1px solid $textcolor-default;
-   border-top: 1px solid $textcolor-default;
+   //border-bottom: 1px solid $textcolor-default;
+   //border-top: 1px solid $textcolor-default;
+   margin-top: 0.2rem;
    padding-left:$padding-hor;
    padding-right:$padding-hor;
 }

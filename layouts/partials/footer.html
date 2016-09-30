@@ -3,19 +3,18 @@
       <div id="aside"> {{ partial "aside" . }} </div>
    </div>
   </div>
-  <div class="row">
-   <div class="col-12">
-   <div id="footer" role="contentinfo">
-      <div class="footer-links">
+  <div class="row" id="footer">
+    <div class="item left">
          {{ $currentNode := . }}
          {{- range .Site.Menus.footer }}
-         <a {{ if $currentNode.IsMenuCurrent "footer" . }} class="nav-link-active" {{ end }} href="{{ .URL }}">{{ .Name }}</a>
+         <p><a {{ if $currentNode.IsMenuCurrent "footer" . }} class="nav-link-active" {{ end }} href="{{ .URL }}">{{ .Name }}</a></p>
          {{ end }}
-      </div>
-      <p class="footer-left"></p>
-      <p class="footer-right"><a href="https://gohugo.io" target="blank">powered by Hugo</a></p>
-   </div>
-   </div>
+    </div>
+    <div class="item center">
+    </div>
+    <div class="item right">
+         <a href="https://gohugo.io" target="blank">powered by Hugo</a>
+    </div>
   </div>
  </div>
  <script src="{{ .Site.BaseURL }}js/disqus-onclick.js"></script>
