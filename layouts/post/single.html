@@ -1,9 +1,6 @@
 {{- partial "header" . -}}
 {{- partial "heading" . -}}
-{{- if isset .Params "image" }}   <div class="Post-Banner-Image">
-      <img src="{{ .Permalink }}/{{ .Params.image }}" alt="Banner" />
-   </div>
-   {{- end }}
+   {{ if isset .Params "image" }}<img class="Post-Banner-Image" src="{{ .Permalink }}/{{ .Params.image }}" alt="Banner" />{{ end }}
    <div class="Post-Heading-Container">
     <div class="Post-Heading-Inline">
      <div class="Post-Title-Pre">Category</div>

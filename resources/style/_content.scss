@@ -5,8 +5,8 @@
 // Center an inline div with Post-Titel and Post-Title-Pre
 // to align Post-title-pre left to Post-title
 .Post-Heading-Container{
-   margin-top:1.25rem;
-   margin-bottom: 1.2rem;
+   margin-top:4rem;
+   margin-bottom: 4rem;
    text-align: center;
    font-size: 0.8rem;
    line-height: 1rem;
@@ -36,13 +36,10 @@
 }
 
 .Post-Banner-Image {
+   display:block;
    margin: auto;
-   margin-bottom: -0.5rem;
-
-   img {
-      max-width: 100%;
-      height: auto;
-   }
+   max-width: 100%;
+   height: auto;
 }
 
 .contentfooter {
@@ -54,9 +51,9 @@
    font-size: 1rem;
 
    .line {
-      margin-top: 4rem;
+      margin-top: 6rem;
       position: relative;
-      border-bottom: 1px solid $textcolor-light;
+      //border-bottom: 1px solid $textcolor-light;
 
     a{
       position: absolute;
