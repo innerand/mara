@@ -2,46 +2,44 @@
 // Single Content styles
 //
 
+// padding and min height is set at layout!
+#content {
+
+   .heading {
+      margin-top:4rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      font-size: 0.8rem;
+      line-height: 1rem;
+
+      .inline{
+         display: inline-block;
+         text-align: left;
+           //.pre { text-align: left;}
+
+           .title {
+               font-size: 2.25rem;
+               line-height: normal;
+               font-weight: normal;
+               letter-spacing: 0.1rem;
+               //text-align: left;
+               margin-top: 0rem;
+               margin-bottom: 0;
+           }
+
+           .sub {
+                line-height: 1rem;
+             // text-align: left;
+                margin-top: 0;
+           }
+
+      }
+
+   }
+}
+
 // Center an inline div with Post-Titel and Post-Title-Pre
 // to align Post-title-pre left to Post-title
-.Post-Heading-Container{
-   margin-top:4rem;
-   margin-bottom: 4rem;
-   text-align: center;
-   font-size: 0.8rem;
-   line-height: 1rem;
-}
-
-.Post-Heading-Inline{
-   display: inline-block;
-}
-.Post-Title-Pre{
-   text-align: left;
-}
-
-.Post-Title{
-   font-size: 2.25rem;
-   line-height: normal;
-   font-weight: normal;
-   letter-spacing: 0.1rem;
-   text-align: left;
-   margin-top: 0rem;
-   margin-bottom: 0;
- }
-
-.Post-Title-Sub {
-   line-height: 1rem;
-   text-align: left;
-   margin-top: 0;
-}
-
-.Post-Banner-Image {
-   display:block;
-   margin: auto;
-   max-width: 100%;
-   height: auto;
-}
-
 .contentfooter {
    position: relative;
    margin: auto;

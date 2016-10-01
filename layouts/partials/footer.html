@@ -1,9 +1,8 @@
-   </main>
-   <div class="col-3">
-      <div id="aside"> {{ partial "aside" . }} </div>
    </div>
+   </div>
+   <div id="aside"> {{ partial "aside" . }} </div>
   </div>
-  <div class="row" id="footer">
+  <div id="footer">
     <div class="item left">
          {{ $currentNode := . }}
          {{- range .Site.Menus.footer }}

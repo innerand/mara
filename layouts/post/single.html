@@ -1,11 +1,10 @@
 {{- partial "header" . -}}
 {{- partial "heading" . -}}
-   {{ if isset .Params "image" }}<img class="Post-Banner-Image" src="{{ .Permalink }}/{{ .Params.image }}" alt="Banner" />{{ end }}
-   <div class="Post-Heading-Container">
-    <div class="Post-Heading-Inline">
-     <div class="Post-Title-Pre">Category</div>
-     <h1 class= "Post-Title">{{ .Title }}</h1>
-     <div class="Post-Title-Sub">{{ .PublishDate.Format .Site.Params.DateForm }}{{ if .Params.modified }} ({{ .Site.Params.SymbolMod | safeHTML }} {{ .Lastmod.Format .Site.Params.DateForm }}){{ end }}{{ if isset .Params "autor" }} | {{ .Params.autor }}{{ end }} </div>
+   <div class="heading">
+    <div class="inline">
+     <div class="pre">Category</div>
+     <h1 class= "title">{{ .Title }}</h1>
+     <div class="sub">{{ .PublishDate.Format .Site.Params.DateForm }}{{ if .Params.modified }} ({{ .Site.Params.SymbolMod | safeHTML }} {{ .Lastmod.Format .Site.Params.DateForm }}){{ end }}{{ if isset .Params "autor" }} | {{ .Params.autor }}{{ end }} </div>
      </div>
    </div>
 {{- .Content -}}

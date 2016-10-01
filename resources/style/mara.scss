@@ -27,8 +27,7 @@
 //Import form module
 //@import "form";
 
-//Import the grid system for siimple
-@import "grid";
+@import "aside";
 
 //Import the table module
 @import "table";
@@ -46,7 +45,8 @@
 //Import content module
 @import "content";
 
-@import "aside";
+//Basic site layout
+@import "layout";
 
 //Import custom module
 @import "custom";

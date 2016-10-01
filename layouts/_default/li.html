@@ -1,7 +1,7 @@
    <div class="flex-container List-Item">
       <div class="List-Item-Side">
-       {{- if isset .Params "image" }}
-       <div class="List-Item-Image"><a href="{{ .Permalink }}"><img src="{{ .Permalink}}/{{ .Params.image }}" alt="Banner" /></a></div>
+       {{- if isset .Params "banner" }}
+       <div class="List-Item-Image"><a href="{{ .Permalink }}"><img src="{{ .Permalink}}/{{ .Params.banner }}" alt="Banner" /></a></div>
        {{- end }}
       </div>
       <div class="List-Item-Content">

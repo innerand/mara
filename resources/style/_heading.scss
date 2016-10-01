@@ -3,7 +3,7 @@
 //
 
 $title-color: $title-accent-color;
-$padding-hor: 0rem;
+$padding-hor: 0.1rem;
 $padding-ver: 0.4rem;
 
 // Conatiner for site heading
@@ -16,9 +16,9 @@ $padding-ver: 0.4rem;
 #heading {
    //border-bottom: 1px solid $textcolor-default;
    //border-top: 1px solid $textcolor-default;
-   margin-top: 0.2rem;
-   padding-left:$padding-hor;
-   padding-right:$padding-hor;
+   margin-top: 0.5rem;
+   padding-left:0.5rem;
+   padding-right:0.5rem;
 }
 
 #header {
@@ -45,7 +45,7 @@ $padding-ver: 0.4rem;
       display: inline;
       color: $title-color;
       a {
-          &:hover { color: lighten($title-color, 25%) !important;}
+          &:hover { color: $title-color !important;}
         }
    }
 }
@@ -75,4 +75,15 @@ nav {
       }
 
    }
+
+#banner{
+   .banner-image {
+         margin: auto;
+         margin-top: 1rem;
+         margin-bottom: -1rem;
+         width:100%;
+         max-width: 100%;
+         height: auto;
+   }
+}
 
