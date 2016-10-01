@@ -4,19 +4,19 @@
 //  Under the MIT License
 //////////////////////////////////////////////////////////////////////////////////
 
-$media-width-wide: 1130px;
-$media-width-thin:  970px;
-$site-padding: 1%;
+$media-width-wide: 1264px; // max site with
+$media-width-thin:  970px; // 1 column layout
+$site-padding: 2%;
 
 //Default grid
 .grid
 {
   //Grid style
-  display: block; width: $media-width-wide; margin: { left: auto; right: auto; bottom:1rem;} min-height: 40px;
+  display: block; width: $media-width-wide; margin: { left: auto; right: auto; bottom:0.1rem; top:0.3rem} min-height: 40px;
   background-color: $bgcolor-default;
 
   //Grid media
-  @media (max-width: ($media-width-wide * 1.0638) ) { width: 100%; }
+  @media (max-width: ($media-width-wide * 1.026 ) ) { width: 99%; }
 
   //Grid fluid
   &-fluid { width: 100%; }

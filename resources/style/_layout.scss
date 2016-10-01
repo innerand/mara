@@ -1,0 +1,72 @@
+//////////////////////////////////////////////////////////////////////////////////
+//  Siimple - Minimal CSS framework for flat and clean designs.
+//  http://siimple.github.io
+//  Under the MIT License
+//////////////////////////////////////////////////////////////////////////////////
+
+$content-width: 57rem;
+$media-wide: 1264px; // max site with
+$media-default: 940px; // 1 column layout
+$site-padding: 0.8rem;
+
+#media {
+  display: block;
+  width: $content-width;
+  min-width: $content-width;
+  margin: { left: 2%; right: auto; bottom:0.3rem; top:0.3rem}
+  //background-color: $bgcolor-default;
+
+  //Grid media
+}
+
+#page{
+  box-sizing: border-box;
+  padding: 0;
+  background-color: $bgcolor-default;
+  min-width:$content-width;
+  flex-shrink: 1;
+}
+
+#content { padding: 1rem 7%;
+           min-height: 90vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+
+//Thin screens
+@media (max-width: ( $content-width + 3rem ) ) {
+     #media{ width: 98%;
+             margin-left: auto;
+             max-width: $content-width;
+             min-width: 5rem;
+          }
+     #page {min-width: auto;}
+}
+
+//Wide screens
+@media (min-width: ($content-width + 10rem))
+{
+   .flex { flex-direction: row; }
+   #aside { display:block;
+      min-width: 15rem;
+      width:15rem;}
+
+   .media { width: $content-width + 15rem; }
+
+}
+
+// Print
+@media print {
+   #heading { display: none;}
+   #aside { display: none; }
+   #footer {display: none; }
+   #content {padding: 0; }
+   #disqus_thread { display: none; }
+   .contentfooter {display: none;}
+}
