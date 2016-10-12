@@ -1,1 +1,8 @@
-<a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+{{ partial "header" . -}}
+{{ partial "heading" . }}
+<div class="list-heading"><h1>{{ .Title }}</h1></div>
+{{ range (.Paginator ).Pages }}
+      {{ .Render "li" }}
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+{{ partial "footer" . }}
