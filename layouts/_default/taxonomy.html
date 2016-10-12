@@ -1,7 +1,8 @@
 {{ partial "header" . -}}
 {{ partial "heading" . }}
+<div class="list-heading"><h1>All on {{ .Title }}</h1></div>
 {{ range (.Paginator ).Pages }}
-      {{ .Render "list" }}
+      {{ .Render "li" }}
 {{ end }}
 {{ template "_internal/pagination.html" . }}
 {{ partial "footer" . }}

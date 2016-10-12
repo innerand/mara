@@ -16,9 +16,7 @@ $padding-ver: 0.4rem;
 #heading {
    //border-bottom: 1px solid $textcolor-default;
    //border-top: 1px solid $textcolor-default;
-   margin-top: 0.5rem;
-   padding-left:0.5rem;
-   padding-right:0.5rem;
+   margin: 0.5rem;
 }
 
 #header {
@@ -79,8 +77,6 @@ nav {
 #banner{
    .banner-image {
          margin: auto;
-         margin-top: 1rem;
-         margin-bottom: -1rem;
          width:100%;
          max-width: 100%;
          height: auto;

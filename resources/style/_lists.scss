@@ -2,55 +2,56 @@
 // list styles
 //
 
-.List-Item{
-   position: relative;
-   overflow:hidden;
-
-   padding: 0.5rem;
+.list-heading {
+   margin-top: 1rem;
    margin-bottom: 2rem;
-   h1, h2, h3, h4, h5, h6 {
+   text-align: center;
+   border-top: 1px dotted $textcolor-light;
+   border-bottom: 1px dotted $textcolor-light;
+   h1{ margin: 0;
+      padding: 0 ;
+   }
+}
+
+.list-item{
+   display: block;
+   //border-bottom: 1px dotted $textcolor-light;
+   margin:2rem 0rem;
+
+   //padding-right: 0.8rem;
+   //border-right: 2px solid $textcolor-light;
+
+   .title{
       line-height: 2rem;
       font-weight: normal;
       letter-spacing: 0.1rem;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-   }
-
-   .List-Item-Pre {
-      font-size:0.8rem;
-      line-height: 1rem;
-   }
-
-   .List-Item-Title{
+      margin: 0;
       padding-bottom: 0rem;
+      a{ font-weight: normal; }
+   }
+   .header {
+      .pre {
+         font-size:0.8rem;
+         line-height: 1rem;
+       }
+      //border-bottom: 1px dotted $textcolor-light;
+      margin-bottom: 0.4rem;
    }
 
-   .List-Item-Side {
-      width: 200px;
-      padding-right: 1rem;
-      line-height:2rem;
-      font-weight:normal;
-   }
-
-   .List-Item-Sub {
-      font-size: 0.8rem;
-      padding-bottom: 0.5rem;
-   }
-
-   .List-Item-Content {
-      flex: 1;
-      p {
-         margin-bottom: 0;
-      }
-   }
-
-   .List-Item-Image{
+   .banner{
       img {
-         max-width: 100%;
+         width: 100%;
          height: auto;
-         max-height: 8rem;
       }
    }
+   .content {
+      p {  margin-bottom: 0;
+           padding-bottom: 0rem;
+      }
+   }
+   .read-more {   display: block;
+                  text-align: right;
+               }
 }
 
 

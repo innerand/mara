@@ -8,23 +8,21 @@
    .heading {
       margin-top:4rem;
       margin-bottom: 4rem;
-      text-align: center;
+      text-align: left;
       font-size: 0.8rem;
       line-height: 1rem;
 
       .inline{
          display: inline-block;
          text-align: left;
+         max-width: 80%;
            //.pre { text-align: left;}
-
            .title {
                font-size: 2.25rem;
-               line-height: normal;
                font-weight: normal;
                letter-spacing: 0.1rem;
                //text-align: left;
-               margin-top: 0rem;
-               margin-bottom: 0;
+               margin: 0;
            }
 
            .sub {
@@ -33,7 +31,7 @@
                 margin-top: 0;
            }
 
-      }
+           }
 
    }
 }
@@ -89,7 +87,7 @@
 
 #disqus_thread
 {
-   padding-top: 3rem;
+   padding:3rem 0;
    margin: auto;
 }
 

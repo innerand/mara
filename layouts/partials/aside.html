@@ -15,16 +15,6 @@
    </ul>
 </div>
 {{ end }}
-{{ if (isset .Site.Sections "micro") }}
-<div class="latest">
-   <p>Recent Thoughts</p>
-   <ul>
-   {{ range first 3 (where .Site.Pages "Section" "micro") }}
-      {{ .Render "latest" }}
-   {{ end }}
-   </ul>
-</div>
-{{ end }}
 
 {{ if (isset .Site.Sections "post") }}
 <div class="latest">
@@ -36,3 +26,14 @@
    </ul>
 </div>
 {{ end }}
+{{ if (isset .Site.Sections "micro") }}
+<div class="latest">
+   <p>Recent Thoughts</p>
+   <ul>
+   {{ range first 3 (where .Site.Pages "Section" "micro") }}
+      {{ .Render "micro_latest" }}
+   {{ end }}
+   </ul>
+</div>
+{{ end }}
+
