@@ -1,0 +1,10 @@
+{{/* Google says (2016/10) the description tag is the only one that matters */}}
+{{- if eq .URL "/" }} {{/* The landing page */}}
+ {{- with .Site.Params.description }}
+ <meta name="description" content="{{ . }}">
+ {{- end }}
+{{- else }}
+ {{- with .Description }}
+  <meta name="description" content="{{ . }}">
+ {{- end }}
+{{- end -}}

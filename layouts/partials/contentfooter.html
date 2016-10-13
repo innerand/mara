@@ -3,4 +3,5 @@
       <a class="iconlink"  onclick="disqusOnclick({{ .Site.DisqusShortname }}, {{ .Permalink }}, {{ .UniqueID }});return false;" title="Enable Comments (and give up some privacy)">{{ partial "genericons/svgcomment" }}<span>Enable Comments</span></a>
       {{- partial "share" . -}}
    </div>
+   <div id="disqus_thread"></div>
 
