@@ -11,5 +11,6 @@
      {{ partial "nav" . }}
      </nav>
     </div>
-    <div id="banner">{{ if isset .Params "banner" }}<img class="banner-image" src="{{ .Permalink }}/{{ .Params.banner }}" alt="Banner" />{{ end }}</div>
+    <div id="banner">{{ if isset .Params "banner" }}<img class="banner-image" src="{{ .Permalink }}{{ .Params.banner }}" alt="Banner" />
+                     {{- else if ( and (.IsHome) (isset .Site.Params "banner") ) }}<img class="banner-image" src="{{ .Permalink }}{{ .Site.Params.banner }}" alt="Banner" />{{ end }}</div>
   <div id="content">
