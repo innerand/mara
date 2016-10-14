@@ -1,8 +1,18 @@
++++
+date = "2016-09-15T18:00:42+02:00"
+title = "The Readme Page of the Mara Theme"
+type = "article"
+
+autor = "innerand"
+modified = true
+norobots=false 
+
+categories = ["Documentation"]
++++
+
 # Mara Theme
 
 The Mara Theme is a simple responsive [hugo](https://gohugo.io) theme designed for my private website.  
-
-![screenshot](https://raw.githubusercontent.com/innerand/mara/master/images/screenshot.png)
 
 ## Overview
 The Mara Theme focuses on content and aims to hold everything else in background. There are three types of content  

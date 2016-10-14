@@ -1,0 +1,89 @@
+---
+# hostname (and path) to the root, e.g. http://spf13.com/
+baseURL:                    "https://mara-testpage.at"
+title:                      "mara_exampleSite"
+theme:                      "mara"
+languageCode:               "de-AT"
+
+disableRSS:                 true
+disableSitemap:             false
+enableRobotsTXT:            true
+disable404:                 false
+
+# you propaby should set something higher
+# 4 is for testing
+paginate:                   4
+paginatePath:               "page"
+
+pygmentsCodeFencesGuessSyntax: false
+# color-codes for highlighting derived from this style
+pygmentsStyle:              "monokai"
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses:         false
+defaultLayout:              "post"
+
+disqusShortname: "mara-testpage"
+
+#
+# Mara-Theme specific
+#
+
+menu: ["main", "footer"]
+
+# define navigation links without content file here
+menu:
+   main:
+      - Name: "Articles"
+        Identifier: "Article"
+        URL:  "/article/"
+        Weight: -1
+      - Name: "Timeline"
+        Identifier: "Timeline"
+        Weight: -3
+        URL: "/micro/"
+      - Name: "Blog"
+        Identifier: "Blog"
+        Weight: -2
+        URL: "/post/"
+
+params:
+   #
+   #Mara-Theme specific
+   #
+
+   # Add Open Graph protocol Metadata to html header
+   # see https://ogp.me
+   enableOG: true
+
+   # Descripiton for the site
+   # May be shown at search results and social media shars
+   description: "This is the discripiton for the landing Page"
+
+   # Image used if the site is shared at social media
+   # should be at least 1200x630px and less then i8Mb
+   ogimage: "img/exampleogimg.png"
+
+   # If set this image will be shown on top of the landing page
+   # banner: "img/examplebanner.png"
+
+   # Profiles
+   github: "https://github.com/john.snow"
+   twitter: "https://twitter.com/john.snow"
+   #facebook: "https://www.facebook.com/john.snow"
+   #googleplus: "https://plus.google.com/<profile id>"
+
+   # Format of Date and Time strings
+   # However, the reference date has to be Mon Jan 2 15:04:05 MST 2006
+   DateForm: "2. Jan 2006"
+   DateTimeForm: "2. Jan 2006, 15:04 Uhr"
+
+   # Modified symbol (or string)
+   SymbolMod: "&#9998"
+
+# to avoid collisions with style id tags
+blackfriday:
+   plainIDAnchors: false
+
+taxonomies:
+   category:  "categories"
+---

@@ -4,10 +4,10 @@
 name = "Mara"
 license = "MIT, GPL"
 licenselink = "https://github.com/innerand/mara/blob/master/LICENSE.md"
-description = "A simple responsive theme designed for private websites and blogs"
-homepage = "http://siteforthistheme.com/"
-tags = ["blog", "responsive"]
-features = ["blog", "pages", "robots.txt"]
+description = "A simple and flat theme designed for a private website"
+homepage = "https://github.com/innerand/mara"
+tags = ["flat", "privacy", "responsive", "opengraph", "disqus"]
+features = ["blog", "microblog", "articles", "comments" ]
 min_version = 0.15
 
 [author]
