@@ -1,18 +1,29 @@
  <meta property="og:site_name" content="{{ .Site.Title }}">
- <meta property="og:locale" content="de_AT">
 {{- if eq .URL "/" }} {{/* The landing page */}}
  <meta property="og:title" content="{{ .Title }}">
- <meta property="og:description" content="foo">
- <meta property="og:img" content="/img/nxa.png">
+ {{- with .Site.Params.description }}
+ <meta property="og:description" content="{{ . }}">
+ {{- end }}
+ {{- with .Site.Params.ogimage }}
+ <meta property="og:img" content="{{ $.Site.BaseURL }}{{ . }}">
+ {{- end }}
  <meta property="og:type" content="website">
+ <meta property="og:url" content="{{ .Site.BaseURL }}">
 {{- else }}
- <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+ <meta property="og:title" content="{{ .Title }}">
 {{- with .Description }}
  <meta property="og:description" content="{{ . }}">
 {{- end }}
-{{- with .Params.image }}
- <meta property="og:img" content="{{ $.Permalink }}/{{ . }}">
+{{ if (isset .Params "ogimage") }}
+<meta property="og:img" content="{{ .Permalink }}{{ .Params.ogimage }}">
+{{ else if (isset .Params "banner") }}
+ <meta property="og:img" content="{{ .Permalink }}{{ .Params.banner }}">
+{{ else if (isset .Site.Params "ogimage") }}
+ <meta property="og:img" content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage }}">
 {{- end }}
  <meta property="og:type" content="blog">{{/* TODO: dynamic types */}}
  <meta property="og:url" content="{{ .Permalink }}">
+{{- with .Params.lancode }}
+ <meta property="og:locale" content="{{ . }}">
+{{ end }}
 {{- end -}}

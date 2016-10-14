@@ -1,5 +1,7 @@
 {{- partial "header" . -}}
 {{- partial "heading" . -}}
-<h1>{{ .Title }}</h1>
-{{- .Content -}}
+<ul class="micro">
+{{ .Render "micro_li" }}
+</ul>
+{{ partial "contentfooter" . }}
 {{- partial "footer" . -}}
