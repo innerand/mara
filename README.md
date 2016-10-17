@@ -112,7 +112,7 @@ However, parts of it **may be licensed under different conditions**.
 Have a look at the [license file](/LICENSE.md) for more detail information.
 
 ## Developing
-Versioning is oriented at [Semantic Versioning](http://semver.org), branching at the [branching model](http://nvie.com/post/a-successful-git-branching-model) by Vincent Driessen.
+Versioning is oriented at [Semantic Versioning](http://semver.org), branching at the [branching model](http://nvie.com/posts/a-successful-git-branching-model) by Vincent Driessen.
 
 ### Versioning
 Given a version number MAJOR.MINOR.PATCH an increment means:
