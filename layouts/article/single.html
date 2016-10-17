@@ -1,4 +1,12 @@
 {{- partial "header" . -}}
 {{- partial "heading" . -}}
+   <div class="heading">
+    <div class="inline">
+       <div class="pre">{{ partial "category_link" . }}</div>
+     <h1 class= "title">{{ .Title }}</h1>
+     <div class="sub">{{ .PublishDate.Format .Site.Params.DateForm }}{{ if .Params.modified }} ({{ .Site.Params.SymbolMod | safeHTML }} {{ .Lastmod.Format .Site.Params.DateForm }}){{ end }}{{ if isset .Params "autor" }} | {{ .Params.autor }}{{ end }} </div>
+    </div>
+   </div>
 {{- .Content -}}
+{{- partial "contentfooter" . }}
 {{- partial "footer" . -}}

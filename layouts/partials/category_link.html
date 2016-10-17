@@ -1,0 +1,1 @@
+{{ if isset .Params "categories" }}{{ $cat := ( index .Params.categories 0 ) }}<a href="/categories/{{ $cat | urlize  }}/" title="More on {{ $cat }}">{{ $cat }}</a> {{ end }}

@@ -3,25 +3,38 @@
 //
 
 #footer {
-   margin-top: 5rem;
-   padding-top: 0;
-   border-top: 1px solid lightgrey;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+
+   padding: 0.5rem 0.8rem;
    text-align: center;
-   clear: both;
    font-size: 0.8rem;
-   opacity:  .6;
+   background-color: $bgcolor-empty;
 
-   a { text-decoration: none; }
-   p { margin-bottom: 0; }
-
-   .footer-links{
-       a {
-            display: block;
-            padding: 0px 2px;
-            margin: 0 4px;
-         }
+   a { text-decoration: none;
+       color: $textcolor-default;
+       &:hover{ color: $white; }
    }
 
-   .footer-left { float:left; }
-   .footer-right { float: right; }
+   p {
+       line-height: 1.12rem;
+       margin-bottom: 0rem;
+   }
+
+   .item{
+      flex-grow: 1;
+      align-self: flex-end;
+   }
+
+   .left{
+      text-align:left;
+   }
+
+   .right{
+     text-align:right;
+   }
+
+
 }

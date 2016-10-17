@@ -1,17 +1,16 @@
 </head>
 <body>
- <div class="grid media">
-  <div class="row" name="top">
-  <div class="col-12">
-   <div class="flex-container" id="heading">
-   <div id="header" role="banner">
+ <div id="media">
+  <div class="flex">
+   <div id="page">
+    <div class="flex-container" id="heading">
+     <div id="header" role="banner">
       <div id="title">&#47<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>&#47</div>
-   </div>
-   <nav role="navigation" title="Main Navigation">
-    {{ partial "nav" . }}
-   </nav>
-  </div>
-  </div>
-  </div>
-  <div class="row" id="main">
-   <main class="col-9" role="main">
+     </div>
+     <nav role="navigation" title="Main Navigation">
+     {{ partial "nav" . }}
+     </nav>
+    </div>
+    <div id="banner">{{ if isset .Params "banner" }}<img class="banner-image" src="{{ .Permalink }}{{ .Params.banner }}" alt="Banner" />
+                     {{- else if ( and (.IsHome) (isset .Site.Params "banner") ) }}<img class="banner-image" src="{{ .Permalink }}{{ .Site.Params.banner }}" alt="Banner" />{{ end }}</div>
+  <div id="content">
