@@ -110,9 +110,8 @@ type = "page"
 ### Miscellaneous
 
 #### Robots.txt
-The theme generates a robots.txt with a sitemap link.  As a default setting
-`/static` is disallowed for all robots.  Additional sites can be disallowed by
-setting the norobots parameter to true.
+The theme generates a robots.txt with a sitemap link. Sites can be
+disallowed by setting the norobots parameter to true.
 
 #### Favicon
 The theme refers to a favicon at `/favicon.png`. You may want to place one
