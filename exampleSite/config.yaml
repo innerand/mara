@@ -10,7 +10,7 @@ disableSitemap:             false
 enableRobotsTXT:            true
 disable404:                 false
 
-# you propaby should set something higher
+# you probably should set this something higher
 # 4 is for testing
 paginate:                   4
 paginatePath:               "page"
@@ -51,13 +51,13 @@ params:
    #Mara-Theme specific
    #
 
-   # Add Open Graph protocol Metadata to html header
+   # Add Open Graph protocol metadata to html header
    # see https://ogp.me
    enableOG: true
 
-   # Descripiton for the site
+   # Description for the site
    # May be shown at search results and social media shars
-   description: "This is the discripiton for the landing Page"
+   description: "This is the description for the landing Page"
 
    # Image used if the site is shared at social media
    # should be at least 1200x630px and less then i8Mb
