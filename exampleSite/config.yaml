@@ -55,6 +55,11 @@ params:
    # see https://ogp.me
    enableOG: true
 
+   # If set with a Twitter user according to the site Twitter cards meta data
+   # will be added to the header.
+   # The content is taken from the Open Graph meta data.
+   twitterSite: "@maratheme"
+
    # Description for the site
    # May be shown at search results and social media shars
    description: "This is the description for the landing Page"
