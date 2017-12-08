@@ -4,8 +4,8 @@ title = "Example Article with some longer Title but without Images"
 type = "article"
 
 autor = "John Snow"
-modified = true
-norobots= true
+ismodified = true 
+norobots = true
 
 +++
 

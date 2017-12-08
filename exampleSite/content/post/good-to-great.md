@@ -4,7 +4,7 @@ title = "Good to Great with the long title"
 type = "post"
 
 autor = "Max Mustermann"
-modified = false
+ismodified = false
 norobots= true
 +++
 # Hostem optat sibi animam Hymenaee est tibi

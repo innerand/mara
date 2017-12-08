@@ -5,7 +5,7 @@ title = "Examplepost"
 ogimage = "foobar.png"
 banner = "examplebanner.png"
 autor = "John Snow"
-modified = false
+ismodified = false
 lancode = "en-DE" 
 
 categories = [ "Testpost" ]

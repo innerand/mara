@@ -5,7 +5,7 @@ tags = ["foo","bar"]
 
 date = "2016-10-14T14:34:30+02:00"
 title = "Example Article"
-modified = false
+ismodified = false
 norobots = false
 
 +++

@@ -5,10 +5,16 @@ title:                      "mara_exampleSite"
 theme:                      "mara"
 languageCode:               "de-AT"
 
-disableRSS:                 true
-disableSitemap:             false
-enableRobotsTXT:            true
-disable404:                 false
+# Allows you to disable all page types and will render nothing related to
+# 'kind'
+# values = "page", "home", "section", "taxonomy", "taxonomyTerm",
+# "RSS", "sitemap", "robotsTXT", "404"
+disableKinds: ["RSS"]
+
+enableGitInfo: true;
+
+
+# DefaultContentLanguage: "en"
 
 # you probably should set this something higher
 # 4 is for testing
@@ -23,6 +29,7 @@ pygmentsUseClasses:         false
 defaultLayout:              "post"
 
 disqusShortname: "mara-testpage"
+
 
 #
 # Mara-Theme specific
