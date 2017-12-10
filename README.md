@@ -62,7 +62,7 @@ following theme specific parameters:
   width of 913px.
 - **autor** the name of the autor. If set it will be shown at the content
   header.
-- **modified** if set to true the date of last modification will be shown at the
+- **ismodified** if set to true the date of last modification will be shown at the
   content header.
 
 ##### Example Header
@@ -76,7 +76,7 @@ draft = false
 ogimage = "ogimage.png"
 banner = "banner.png"
 autor = "John Snow"
-modified = false
+ismodified = false
 lancode = "de-At"
 norobots = false
 
@@ -121,19 +121,3 @@ at the static folder.
 The Mara Theme is released under the MIT License.
 However, parts of it **may be licensed under different conditions**.
 Have a look at the [license file](/LICENSE.md) for more detail information.
-
-## Developing
-Versioning is orientated at [Semantic Versioning](http://semver.org), branching at
-the [branching model](http://nvie.com/posts/a-successful-git-branching-model) by
-Vincent Driessen.
-
-### Versioning
-Given a version number MAJOR.MINOR.PATCH an increment means:
-
-- **PATCH**: bug fixes.
-- **MINOR**: features and functionality in a backwards-compatible manner.
-- **MAJOR**: bigger changes that may brake compatibility.
-
-### Branches
-- **master** is at the latest stable version with tags for each release. 
-- **develop** is at the current development state.
