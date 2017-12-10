@@ -4,7 +4,7 @@
 # image = "examplebanner.png" #Titleimage (width 900px, otherwise scalled or centered)
 
 ismodified = false # if true the last modification date will be shown
-norobots = false # if true this post shouldn't be added to search engines
+norobots = false # if true this post shouldn't be indexed by search engines 
 draft = true
 
 # abstract = ""
