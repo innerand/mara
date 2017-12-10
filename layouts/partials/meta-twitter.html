@@ -1,0 +1,4 @@
+{{- if isset .Site.Params "twitterSite" }}
+ <meta name="twitter:site" content="{{ .Site.Params.twitterSite }}">
+ <meta name="twitter:card" content="summary_large_image">
+{{- end -}}

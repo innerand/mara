@@ -5,7 +5,7 @@
  <meta property="og:description" content="{{ . }}">
  {{- end }}
  {{- with .Site.Params.ogimage }}
- <meta property="og:img" content="{{ $.Site.BaseURL }}{{ . }}">
+ <meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">
  {{- end }}
  <meta property="og:type" content="website">
  <meta property="og:url" content="{{ .Site.BaseURL }}">
@@ -15,11 +15,11 @@
  <meta property="og:description" content="{{ . }}">
 {{- end }}
 {{ if (isset .Params "ogimage") }}
-<meta property="og:img" content="{{ .Permalink }}{{ .Params.ogimage }}">
+<meta property="og:image" content="{{ .Permalink }}{{ .Params.ogimage }}">
 {{ else if (isset .Params "banner") }}
- <meta property="og:img" content="{{ .Permalink }}{{ .Params.banner }}">
+ <meta property="og:image" content="{{ .Permalink }}{{ .Params.banner }}">
 {{ else if (isset .Site.Params "ogimage") }}
- <meta property="og:img" content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage }}">
+ <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.ogimage }}">
 {{- end }}
  <meta property="og:type" content="blog">{{/* TODO: dynamic types */}}
  <meta property="og:url" content="{{ .Permalink }}">

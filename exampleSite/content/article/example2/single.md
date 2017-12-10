@@ -3,9 +3,9 @@ draft = false
 categories = [ "main" ]
 tags = ["foo","bar"]
 
-date = "2016-10-14T14:34:30+02:00"
-title = "Example Article"
-modified = false
+date = "2016-10-01T14:34:30+02:00"
+title = "Example Article 2"
+ismodified = false
 norobots = false
 
 +++

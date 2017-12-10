@@ -1,4 +1,4 @@
 <li class="microlist-item">
-<a class="date" href="{{ .Permalink }}">{{ .Date.Format .Site.Params.DateForm }}</a>
+<a class="date" href="{{ .Permalink }}">{{ partial "snippets/getdate" . }}</a>
 {{ .Content }}
 </li>

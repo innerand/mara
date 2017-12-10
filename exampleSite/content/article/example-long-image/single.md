@@ -4,7 +4,7 @@ title = "Example Article with some longer Title and Images"
 type = "article"
 
 autor = "John Snow"
-modified = false
+ismodified = false
 norobots= false 
 
 banner = "examplebanner.png"

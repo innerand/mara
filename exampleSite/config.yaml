@@ -5,12 +5,18 @@ title:                      "mara_exampleSite"
 theme:                      "mara"
 languageCode:               "de-AT"
 
-disableRSS:                 true
-disableSitemap:             false
-enableRobotsTXT:            true
-disable404:                 false
+# Allows you to disable all page types and will render nothing related to
+# 'kind'
+# values = "page", "home", "section", "taxonomy", "taxonomyTerm",
+# "RSS", "sitemap", "robotsTXT", "404"
+disableKinds: ["RSS"]
 
-# you propaby should set something higher
+enableGitInfo: true;
+
+
+# DefaultContentLanguage: "en"
+
+# you probably should set this something higher
 # 4 is for testing
 paginate:                   4
 paginatePath:               "page"
@@ -23,6 +29,7 @@ pygmentsUseClasses:         false
 defaultLayout:              "post"
 
 disqusShortname: "mara-testpage"
+
 
 #
 # Mara-Theme specific
@@ -51,13 +58,18 @@ params:
    #Mara-Theme specific
    #
 
-   # Add Open Graph protocol Metadata to html header
+   # Add Open Graph protocol metadata to html header
    # see https://ogp.me
    enableOG: true
 
-   # Descripiton for the site
+   # If set with a Twitter user according to the site Twitter cards meta data
+   # will be added to the header.
+   # The content is taken from the Open Graph meta data.
+   twitterSite: "@maratheme"
+
+   # Description for the site
    # May be shown at search results and social media shars
-   description: "This is the discripiton for the landing Page"
+   description: "This is the description for the landing Page"
 
    # Image used if the site is shared at social media
    # should be at least 1200x630px and less then i8Mb

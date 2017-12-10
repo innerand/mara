@@ -1,6 +1,6 @@
    <div class = "list-item">
       <div class="header">
-         <span class="pre">{{ .Date.Format .Site.Params.DateForm }}{{ if isset .Params "categories" }} | {{ end }}{{ partial "category_link" . }}</span>
+         <span class="pre">{{ partial "snippets/getdate" . }}{{ if isset .Params "categories" }} | {{ end }}{{ partial "category_link" . }}</span>
          <h2 class="title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
       </div>
       <div class="content">

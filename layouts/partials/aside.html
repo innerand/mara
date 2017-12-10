@@ -5,7 +5,7 @@
    {{ if (isset .Site.Params "googleplus") }}<a class="icon" href="{{ .Site.Params.googleplus }}" target="_blank" title="Find me at Google+">{{ partial "genericons/svggoogleplus" }}</a> {{ end }}
 </div>
 
-{{ if (isset .Site.Sections "article" ) }}
+{{ with .Site.GetPage "section" "article" }}
 <div class="latest">
    <p>Recent Articles</p>
    <ul>
@@ -15,8 +15,7 @@
    </ul>
 </div>
 {{ end }}
-
-{{ if (isset .Site.Sections "post") }}
+{{ with .Site.GetPage "section" "post" }}
 <div class="latest">
    <p>Recent Blog Posts</p>
    <ul>
@@ -26,7 +25,7 @@
    </ul>
 </div>
 {{ end }}
-{{ if (isset .Site.Sections "micro") }}
+{{ with .Site.GetPage "section" "micro" }}
 <div class="latest">
    <p>Recent Thoughts</p>
    <ul>
@@ -36,4 +35,3 @@
    </ul>
 </div>
 {{ end }}
-

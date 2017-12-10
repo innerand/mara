@@ -5,8 +5,7 @@ type = "page"
 
 [menu.footer]
     Name = "About"
-
 +++
 
-## The About page.
+## The About page
 This Example Site shows how static sites are configured and linked at the footer menu.

@@ -1,7 +1,5 @@
 Sitemap: {{ .Site.BaseURL }}/sitemap.xml
 
 User-agent: *
-
-Disallow: /static/
 {{- range where .Site.Pages "Params.norobots" true }}
 Disallow: {{.RelPermalink}}{{ end }}

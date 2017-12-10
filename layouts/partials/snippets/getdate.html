@@ -1,0 +1,1 @@
+{{ if in . "PublishDate" }}{{ .PublishDate.Format .Site.Params.DateForm }}{{ else }}{{ .Date.Format .Site.Params.DateForm }}{{ end }}
